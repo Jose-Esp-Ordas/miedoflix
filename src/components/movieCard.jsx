@@ -1,8 +1,14 @@
 
-const movieCard = ({item}) => {
+const movieCard = ({title}) => {
+    
   return (
     <>
-        <h1>{item}</h1>
+        <div className=" flex flex-col m-2 border-2 border-amber-600 rounded ">
+            <h1>{title.title}</h1>
+            <p>Año: {title.year}</p>
+            <p>Géneros: {title.type}</p>
+            <img src={title.poster} alt={title.title} />
+        </div>
     </>
   )
 }

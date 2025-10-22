@@ -2,7 +2,7 @@
 const movieCard = ({item}) => {
   return (
     <>
-        <h1>{item.title}</h1>
+        <h1>{item}</h1>
     </>
   )
 }
